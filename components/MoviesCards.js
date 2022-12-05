@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-const MoviesGrid = ({item}) => {
+const MoviesCards = ({item}) => {
     const {title, poster_path,overview,release_date,vote_average,popularity,original_language,id} = item
     return (
         <>
@@ -22,4 +22,4 @@ const MoviesGrid = ({item}) => {
     );
 };
 
-export default MoviesGrid;
+export default MoviesCards;

@@ -1,7 +1,7 @@
 import Head from "next/head";
 import { useState } from "react";
 import Footer from "../../components/Footer";
-import MoviesGrid from "../../components/moviesGrid";
+import MoviesCards from "../../components/MoviesCards";
 import Navbar from "../../components/Navbar";
 
 
@@ -28,9 +28,9 @@ const movies = (props) => {
             <div className="grid grid-cols-4 gap-4 mx-auto">
 
             {
-                movieList.map( item => <MoviesGrid key={item.id}
+                movieList.map( item => <MoviesCards key={item.id}
                 item={item}
-                ></MoviesGrid>
+                ></MoviesCards>
                 )
             }
             </div>
